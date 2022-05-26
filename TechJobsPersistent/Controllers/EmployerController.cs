@@ -20,6 +20,8 @@ namespace TechJobsPersistent.Controllers
 
         public IActionResult Add()
         {
+            // create an instance of the AddEmployerViewModel
+            // then pass it to the view
             return View();
         }
 

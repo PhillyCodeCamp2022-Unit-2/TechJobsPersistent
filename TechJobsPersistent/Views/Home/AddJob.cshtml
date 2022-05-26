@@ -1,4 +1,6 @@
-﻿<h1>Add a Job</h1>
+﻿@model TechJobsPersistent.ViewModels.AddJobViewModel
+
+<h1>Add a Job</h1>
 
 <form asp-controller="Home" asp-action="ProcessAddJobForm" method="post">
     <div class="form-group">
@@ -6,7 +8,14 @@
         <input class="form-control" />
         <span></span>
     </div>
-
+    <div class="form-group">
+        <!--Our label and input tags for choosing an Employer when creating a job-->
+        <label></label>
+        <!--What is the dropdown menu HTML form element called?-->
+        <select></select>
+        <!--We need a link that takes us to the add employer form-->
+        <a></a>
+    </div>
     <input type="submit" value="Add Job" />
 </form>
 

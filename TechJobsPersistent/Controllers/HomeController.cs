@@ -32,6 +32,10 @@ namespace TechJobsPersistent.Controllers
         [HttpGet("/Add")]
         public IActionResult AddJob()
         {
+            // create an instance of the AddJobViewModel and pass it to the view
+            // When we creat this instance of AddJobViewModel, this is when we can 
+            // get a list of all the employers from the database and pass it into
+            // the AddJobViewModel instance!
             return View();
         }
 
