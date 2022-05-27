@@ -16,6 +16,16 @@
         <!--We need a link that takes us to the add employer form-->
         <a></a>
     </div>
+    <div class="form-group">
+        <!--Loop through each skill in our list of Skill objects-->
+        <!--How do we access our list of Skills here in the view?-->
+        <!--foreach skill in our list of all skills in the view model!-->
+        @foreach (Skill skill in blank)
+        {
+            <label>@skill.Name</label>
+            <input type="checkbox" name="selectedSkills" value="@skill.Id" />
+        }
+    </div>
     <input type="submit" value="Add Job" />
 </form>
 
